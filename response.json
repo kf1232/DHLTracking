@@ -1,0 +1,212 @@
+{
+    "id": "1500724750",
+    "service": "express",
+    "origin": {
+        "address": {
+            "addressLocality": "TURIN - ITALY"
+        },
+        "servicePoint": {
+            "url": "http://www.dhl.it/en/country_profile.html",
+            "label": "Origin Service Area"
+        }
+    },
+    "destination": {
+        "address": {
+            "addressLocality": "AUSTIN, TX - USA"
+        },
+        "servicePoint": {
+            "url": "http://www.dhl-usa.com/en/country_profile.html",
+            "label": "Destination Service Area"
+        }
+    },
+    "status": {
+        "timestamp": "2023-02-06T17:27:00",
+        "location": {
+            "address": {
+                "addressLocality": "AUSTIN, TX - USA"
+            }
+        },
+        "statusCode": "delivered",
+        "status": "delivered",
+        "description": "Delivered"
+    },
+    "details": {
+        "proofOfDelivery": {
+            "timestamp": "2023-02-06T17:27:00",
+            "signatureUrl": "https://webpod.dhl.com/webPOD/DHLePODRequest?hwb=UVtLRMiCM4Q8Pb2PT%2FjYWQ%3D%3D&pudate=2mzoWlpeWYLeEOJkT2spMg%3D%3D&appuid=6e6CjUC60oZptUxculyLcQ%3D%3D&language=en&country=G0",
+            "documentUrl": "https://webpod.dhl.com/webPOD/DHLePODRequest?hwb=UVtLRMiCM4Q8Pb2PT%2FjYWQ%3D%3D&pudate=2mzoWlpeWYLeEOJkT2spMg%3D%3D&appuid=6e6CjUC60oZptUxculyLcQ%3D%3D&language=en&country=G0"
+        },
+        "proofOfDeliverySignedAvailable": false,
+        "totalNumberOfPieces": 1,
+        "pieceIds": [
+            "JD014600010637762624"
+        ]
+    },
+    "events": [
+        {
+            "timestamp": "2023-02-06T17:27:00",
+            "location": {
+                "address": {
+                    "addressLocality": "AUSTIN, TX - USA"
+                }
+            },
+            "description": "Delivered",
+            "pieceIds": [
+                "JD014600010637762624"
+            ]
+        },
+        {
+            "timestamp": "2023-02-06T09:02:00",
+            "location": {
+                "address": {
+                    "addressLocality": "AUSTIN, TX - USA"
+                }
+            },
+            "description": "Shipment is out with courier for delivery",
+            "pieceIds": [
+                "JD014600010637762624"
+            ]
+        },
+        {
+            "timestamp": "2023-02-06T06:00:00",
+            "location": {
+                "address": {
+                    "addressLocality": "AUSTIN, TX - USA"
+                }
+            },
+            "description": "Arrived at DHL Delivery Facility AUSTIN - USA",
+            "pieceIds": [
+                "JD014600010637762624"
+            ]
+        },
+        {
+            "timestamp": "2023-02-06T02:40:00",
+            "location": {
+                "address": {
+                    "addressLocality": "CINCINNATI HUB, OH - USA"
+                }
+            },
+            "description": "Shipment has departed from a DHL facility CINCINNATI HUB - USA",
+            "pieceIds": [
+                "JD014600010637762624"
+            ]
+        },
+        {
+            "timestamp": "2023-02-05T16:15:00",
+            "location": {
+                "address": {
+                    "addressLocality": "CINCINNATI HUB, OH - USA"
+                }
+            },
+            "description": "Processed at CINCINNATI HUB - USA",
+            "pieceIds": [
+                "JD014600010637762624"
+            ]
+        },
+        {
+            "timestamp": "2023-02-04T01:23:00",
+            "location": {
+                "address": {
+                    "addressLocality": "CINCINNATI HUB, OH - USA"
+                }
+            },
+            "description": "Clearance processing complete at CINCINNATI HUB - USA",
+            "pieceIds": [
+                "JD014600010637762624"
+            ]
+        },
+        {
+            "timestamp": "2023-02-04T01:12:00",
+            "location": {
+                "address": {
+                    "addressLocality": "CINCINNATI HUB, OH - USA"
+                }
+            },
+            "description": "Processed at CINCINNATI HUB - USA",
+            "pieceIds": [
+                "JD014600010637762624"
+            ]
+        },
+        {
+            "timestamp": "2023-02-03T11:28:00",
+            "location": {
+                "address": {
+                    "addressLocality": "MILAN - MALPENSA - ITALY"
+                }
+            },
+            "description": "Shipment has departed from a DHL facility MILAN - MALPENSA - ITALY",
+            "pieceIds": [
+                "JD014600010637762624"
+            ]
+        },
+        {
+            "timestamp": "2023-02-03T10:41:00",
+            "location": {
+                "address": {
+                    "addressLocality": "CINCINNATI HUB, OH - USA"
+                }
+            },
+            "description": "Customs clearance status updated. Note - The Customs clearance process may start while the shipment is in transit to the destination."
+        },
+        {
+            "timestamp": "2023-02-02T21:29:00",
+            "location": {
+                "address": {
+                    "addressLocality": "MILAN - MALPENSA - ITALY"
+                }
+            },
+            "description": "Processed at MILAN - MALPENSA - ITALY",
+            "pieceIds": [
+                "JD014600010637762624"
+            ]
+        },
+        {
+            "timestamp": "2023-02-02T20:35:00",
+            "location": {
+                "address": {
+                    "addressLocality": "MILAN - MALPENSA - ITALY"
+                }
+            },
+            "description": "Arrived at DHL Sort Facility MILAN - MALPENSA - ITALY",
+            "pieceIds": [
+                "JD014600010637762624"
+            ]
+        },
+        {
+            "timestamp": "2023-02-02T18:29:00",
+            "location": {
+                "address": {
+                    "addressLocality": "TURIN - ITALY"
+                }
+            },
+            "description": "Shipment has departed from a DHL facility TURIN - ITALY",
+            "pieceIds": [
+                "JD014600010637762624"
+            ]
+        },
+        {
+            "timestamp": "2023-02-02T17:11:00",
+            "location": {
+                "address": {
+                    "addressLocality": "TURIN - ITALY"
+                }
+            },
+            "description": "Processed at TURIN - ITALY",
+            "pieceIds": [
+                "JD014600010637762624"
+            ]
+        },
+        {
+            "timestamp": "2023-02-02T14:59:00",
+            "location": {
+                "address": {
+                    "addressLocality": "TURIN - ITALY"
+                }
+            },
+            "description": "Shipment picked up",
+            "pieceIds": [
+                "JD014600010637762624"
+            ]
+        }
+    ]
+}
