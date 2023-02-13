@@ -48,35 +48,18 @@ ROUTE.get('/dhl/:tracking', (req,res) => {
          *  Status_Time => r.data.shipments[0].status.timestamp
          *  - Current timestamp of the most recent action 
          */
-        let data = {
-            Tracking_Number: r.data.shipments[0].id,
-            Origin: r.data.shipments[0].origin.address.addressLocality,
-            Origin_Time: GetOriginTimestamp(r.data.shipments[0].events.slice(-1)),
-            Status: r.data.shipments[0].status.status,
-            Status_Time: r.data.shipments[0].status.timestamp
+        let eventLength = r.data.shipments[0].events.length
+        let output = {
+            id: r.data.shipments[0].id,
+            statusTime: r.data.shipments[0].status.timestamp,
+            statusEvent: r.data.shipments[0].status.statusCode,
+            originTime: r.data.shipments[0].events[eventLength-1].timestamp,
+            originEvent: r.data.shipments[0].events[eventLength-1].status
         }
-        res.json(data)
+        
+        res.json(output)
     }).catch((e) => {
         res.json({'CODE': e.code, 'STATUS': e.message})
     })
 })
 module.exports = ROUTE
-
-/*
-let records = []
-        r.data.shipments.forEach(part => {
-            let record = {
-                tracking: part.id,
-                originTime: new Date(part.events[0].timestamp),
-                deliveryTime: null,
-            }
-
-            part.events.forEach(event => {
-                event.description == 'Delivered' ? record.deliveryTime = event.timestamp : null
-                record.originTime > new Date(event.timestamp) ? record.originTime = new Date(event.timestamp) : null
-            })
-
-            records.push(record)
-        })
-        res.json(records)
-*/
